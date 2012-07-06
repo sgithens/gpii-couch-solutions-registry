@@ -24,4 +24,10 @@ http://localhost:5984/gpii-sol-registry/_design/gpii-solutions/_list/gpiiPayload
 View all the solutions in the json payload GPII expects only for linux:
 http://localhost:5984/gpii-sol-registry/_design/gpii-solutions/_list/gpiiPayload/os?key="linux"
 
-We'll be putting in some Couch rewrite rules to make the URL's cleaner.
+Additionally, we have rewrite rule to match the GPII Solutions Registry API:
+
+To view a single solution:
+http://localhost:5984/gpii-sol-registry/_design/gpii-solutions/_rewrite/solutions/fluid.uiOptions.linux
+
+To view all solutions for linux:
+http://localhost:5984/gpii-sol-registry/_design/gpii-solutions/_rewrite/solutions?os=linux
